@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Multimedia</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+    <header>Multimedia</header>
+    <h1 class="lagu">Semua Tentang Kita <br>~ Peterpan ~ </br></h1>
+    
+    <div style="text-align:center">
+        <video width="420px" id="media" controls>
+            <source src="Video.mp4" type="video/mp4">
+            <track src="subtitles-id.vtt" kind="subtitles" srclang="id" label="indonesian">
+        </video>
+        <br><br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="duration()">Durasi Video</button>
+        <button onclick="controlOn()">ON</button>
+        <button onclick="controlOff()">OFF</button>
+         
+        </br></br>
+        <p>Source Video : <a href="https://www.youtube.com/watch?v=1EC0KFsRmDA" target="_blank">
+            AMV Peterpan - Semua Tentang Kita</a></p>
+
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("media");
+
+            function playPause()
+            {
+                if (myVideo.paused)
+                    myVideo.play();
+                else myVideo.pause();
+            }
+            function duration() 
+            { 
+                alert(myVideo.duration);
+            } 
+
+            function controlOn() 
+            { 
+                myVideo.controls = true;
+                myVideo.load();
+            } 
+
+            function controlOff() 
+            { 
+                myVideo.controls = false;
+                myVideo.load();
+            } 
+
+    </script>
+    
+
+</body>
+</html>
