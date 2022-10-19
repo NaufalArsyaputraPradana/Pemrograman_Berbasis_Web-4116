@@ -1,0 +1,77 @@
+*, html,body
+{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: Helvetica; 
+}
+
+header
+{
+    background :#1A2238;
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Times New Roman';
+    font-size:18px;
+}
+
+.foto
+{
+    margin-right:30px;
+}
+
+.judul
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:60px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+}
+
+.tabel
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 96.5%;
+    font-family: 'Times New Roman';
+}
+
+.kop
+{
+    background: #1A2238;
+    color: #eaeaea;
+    font-family: 'Franklin Gothic Medium';
+    font-size: medium;
+}
+
+.baris
+{
+    font-family:'Segoe UI';
+    font-size: 14px;
+}
+
+.note
+{
+    padding-top:20px;
+    text-align:center;
+    font-family:Impact;
+    font-size: 20px;
+    color:crimson;
+}
