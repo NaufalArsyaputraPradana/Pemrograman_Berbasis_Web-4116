@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB PROFILE</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo" type="submit" onClick="document.location.reload(true)">
+                <img src="assets/icon/logo.png" alt="logo" class="logo-img"/>
+                <h1 class="logo-title">Arsya</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#tentang">ABOUT</a></li>
+                    <li><a href="#hobi">HOBBY</a></li>
+                    <li><a href="mailto:111202214606@mhs.dinus.ac.id">CONTACT</a></li>
+                    <li><a href="https://www.instagram.com/arsya_mldckzt">FOLLOW ME</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar">
+                <button class="btn-cta" onclick="openNav()">MENU</button>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <a href="Biodata/index.html" href="Biodata/style.css">Biodata</a>
+                        <a href="form/Praktikum-4.html" href="form/style.css" href="form/proses.php">Form</a>
+                        <a href="secondwind/index.html" href="secondwind/style.css">SecondWind Band</a>
+                        <a href="https://www.github.com/NaufalArsyaputraPradana">GitHub</a>
+                    </div>
+                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        
+        <section>
+
+
+            <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+                <div class="w3-display-middle" style="white-space:nowrap;">
+                  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                    Selamat <span class="w3-hide-small">Datang</span>
+                </div>
+            </div>
+            </br></br>
+              
+            <div class="w3-content w3-container w3-padding-64" id="tentang">
+                <h3 class="w3-center">Tentang Saya</h3>
+                <p class="w3-center"><em>Saya Suka Ngoding</em></p>
+                <p class="about">Namaku Naufal Arsyaputra Pradana, Mahasiswa Teknik Informatika, 
+                    Universitas Dian Nuswantoro, Hari - Hariku Di Penuhi dengan Ngoding, Saya Akan Belajar Dengan Rajin,
+                    Dan Saya Akan Menjadi Web Developer Yang Baik Di Masa Depan</p>
+                <p class="w3-center"><em>Saya Programmer Pemula</em></p>
+                <p class="about">Motivasi Saya</p>
+                <h3 class="w3-center">Nggak Ngoding Hidupmu Boring</h3>
+
+            </div>
+            </br></br>
+                
+
+
+
+            
+            <div class="parallax">
+                <div class="tentang" id="hobi">
+                    <p class="title">Jika Anda</p>
+                    <p class="description">Butuh Teman Mabar? Main Musik? atau Ngopi?</p>
+                        <div class="mt-10">
+                            <button class="btn-cta" onclick="redirwhatsapp()">Hubungi Saya</button>
+                        </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-items">
+                                <img src="assets/icon/game.png" alt="icon1" class="icon"/>
+                            <p class="card-title">Gamers</p>
+                            <p class="card-description">Saat Waktu Luang Mabar ML</p>
+                        </div>
+                        <div class="card-items">
+                                <img src="assets/icon/keyboard.jpg" alt="icon2" class="icon"/>
+                            <p class="card-title">Keyboardis</p>
+                            <p class="card-description">Menjadi Keyboardis dalam sebuah band</p>
+                        </div>
+                        <div class="card-items">
+                                <img src="assets/icon/kopi.png" alt="icon3" class="icon"/>
+                            <p class="card-title">Ngopi</p>
+                            <p class="card-description">Sedia Kopi Untuk Mengerjakan Tugas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="description">&copy; Naufal Arsyaputra Pradana</p>
+        </footer>
+            
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+        
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+
+           
+            
+            function redirwhatsapp()
+            {
+                window.location.href="https://wa.me/+6281391431396"
+            }
+            function reloadpage()
+            {
+                location.reload()
+            }
+        </script>
+
+    </body>
+
+</html>

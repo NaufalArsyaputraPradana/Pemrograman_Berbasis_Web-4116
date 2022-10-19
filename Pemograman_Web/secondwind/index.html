@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Multimedia</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="IMG_20220602_175604.jpg" alt="SecondWind" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+          <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>SW</b></span> 
+            <span class="w3-hide-small w3-text-light-grey">SecondWind</span></h1>
+        </div>
+    </header>
+
+    <div class="konten">
+        <h2>Cuplikan Video Cover by SecondWind</h2></br>
+        <video width="840px" id="media" controls>
+            <source src="Video.mp4" type="video/mp4">
+            <track src="subtitles-id.vtt" kind="subtitles" srclang="id" label="Indonesian">
+        </video>
+        <br><br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="duration()">Durasi Video</button>
+        <button onclick="controlOn()">ON</button>
+        <button onclick="controlOff()">OFF</button>
+         
+        </br></br>
+        <p>Source Video : <a href="https://www.youtube.com/channel/UCsaYfAdxMWxxWjBcV9dF1bg" target="_blank">
+            SecondWindTV</a></p>
+        <p>Instagram : <a href="https://www.instagram.com/secondwind.band" target="blank">
+            SecondWind.band
+        </a></p></br></br>
+
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("media");
+
+            function playPause()
+            {
+                if (myVideo.paused)
+                    myVideo.play();
+                else myVideo.pause();
+            }
+            function duration() 
+            { 
+                alert(myVideo.duration);
+            } 
+
+            function controlOn() 
+            { 
+                myVideo.controls = true;
+                myVideo.load();
+            } 
+
+            function controlOff() 
+            { 
+                myVideo.controls = false;
+                myVideo.load();
+            } 
+
+    </script>
+    
+
+</body>
+</html>
